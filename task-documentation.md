@@ -22,8 +22,8 @@
 
 ## What didn’t work
 
-- No test framework was detected, so verification relied on scripts/verify.sh, which reported the absence of supported tests. I documented the gap and left a clear failure message to avoid false success.
-- This repository currently has no runnable test suite; verification stops early until tests are added.
+- During configuration I have expected much to fail, since there where nothing to test each agent mode create.
+- There were 502 Badt gateway error during mcp setting http configurations.
 
 ## Insights gained
 
