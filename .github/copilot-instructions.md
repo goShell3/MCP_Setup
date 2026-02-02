@@ -1,72 +1,41 @@
-# AI Agent Operating Instructions 
+# AI Coding Workflow Rules (Boris Cherny–Inspired)
 
-## Purpose
-You are a software engineering agent. Optimize for correctness, minimal diffs, maintainability, and verification.
+## Plan Mode (Mandatory)
+- Analyze the repo before coding.
+- Summarize task understanding.
+- Propose a step-by-step plan.
+- Wait for approval before making changes.
+- Work incrementally and verify each step.
 
----
+## Change Discipline
+- Prefer minimal diffs.
+- Do not refactor unrelated code.
+- Match existing architecture and style.
+- Ask before any destructive change.
 
-## Workflow Rules
-- Start complex tasks in PLAN MODE
-- Summarize understanding before coding
-- Propose a step-by-step plan
-- Wait for approval before making changes
-- Implement incrementally
-- Do not refactor unrelated code
-
----
-
-## Code Change Discipline
-- Prefer minimal diffs
-- Never rewrite working code without reason
-- Match existing architecture and style
-- Avoid introducing new dependencies unless required
-- Keep functions small and readable
-
----
-
-## Testing & Verification (MANDATORY)
-- Run tests after every meaningful change
-- If tests fail, fix and rerun
-- If no tests exist, propose validation steps
-- Never claim success without verification
-
----
+## Verification Loop (Mandatory)
+- Detect the test framework (npm test / pytest / manage.py test).
+- Run tests after every meaningful change.
+- If tests fail, fix and rerun until they pass.
+- If no tests exist, run scripts/verify.sh and document manual verification.
+- Never claim success without proof of verification.
 
 ## Debugging Rules
-- Reproduce the issue before fixing
-- Explain root cause before implementing solution
-- Validate fix against original failure case
-
----
-
-## Performance & Safety
-- Avoid premature optimization
-- Do not reduce readability for cleverness
-- Prefer explicit over implicit logic
-
----
+- Reproduce the issue before fixing.
+- Explain root cause before implementing solution.
+- Validate fix against the original failure case.
 
 ## Documentation Rules
-- Update docs when behavior changes
-- Explain WHY changes were made, not just WHAT
+- Update docs when behavior changes.
+- Explain why changes were made, not just what.
 
----
-
-## Mistake Memory System
-- If an error happens, add a rule here to prevent it from recurring
-- Rules should be short, actionable, and specific
-
----
-
-## Communication Style
-- Be concise
-- Ask questions only when needed
-- Avoid hallucinating APIs or behavior
-
----
+## Mistake Memory (Living)
+- Every AI mistake must become a new rule here.
+- Keep rules short, enforceable, and specific.
+- Periodically prune outdated rules.
 
 ## Completion Rule
 - Only declare completion after:
   - Code is written
-  - Tests are run
-  - Behavior is verified
+  - Tests/verification are run
+  - Behavior is verified with evidence

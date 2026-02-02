@@ -1,0 +1,18 @@
+{
+  "allowedCommands": [
+    "git status",
+    "git diff",
+    "git log --oneline",
+    "npm test",
+    "npm run test",
+    "pnpm test",
+    "yarn test",
+    "pytest",
+    "python -m pytest",
+    "python manage.py test",
+    "npm run build",
+    "pnpm run build",
+    "yarn build",
+    "./scripts/verify.sh"
+  ]
+}
