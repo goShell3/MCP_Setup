@@ -32,3 +32,5 @@ If no test framework is detected, the script exits with guidance to add tests.
 
 This repo is intentionally minimal and focuses on workflow configuration rather than application code.
 
+<img width="2153" height="939" alt="image" src="https://github.com/user-attachments/assets/47fc8ea7-1630-44f9-a552-fa90ae2b0009" />
+
